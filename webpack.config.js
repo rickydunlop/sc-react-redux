@@ -23,7 +23,6 @@ const defines =
   }, {
     __NODE_ENV__: JSON.stringify(NODE_ENV)
   });
-console.log(defines);
 
 module.exports = {
   entry: [
