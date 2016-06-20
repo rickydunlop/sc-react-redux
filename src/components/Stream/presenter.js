@@ -54,7 +54,14 @@ class Stream extends Component {
       </div>
     );
   }
-
 }
+
+Stream.propTypes = {
+  user: React.PropTypes.object,
+  tracks: React.PropTypes.array,
+  activeTrack: React.PropTypes.object,
+  onAuth: React.PropTypes.func,
+  onPlay: React.PropTypes.func
+};
 
 export default Stream;

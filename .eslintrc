@@ -15,7 +15,10 @@
     "node": true,
     "browser": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": [
+    "react"
+  ],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -26,6 +29,7 @@
     }
   },
   "globals": {
-    "SC": true
+    "SC": true,
+    "__CLIENT_ID__": true
   }
 }
